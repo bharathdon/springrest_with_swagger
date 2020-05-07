@@ -1,4 +1,4 @@
-package com.virtusa.rest;
+package com.virtusa.controller;
 
 public class Employee {
 

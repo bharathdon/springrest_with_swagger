@@ -1,4 +1,4 @@
-package com.virtusa.rest;
+package com.virtusa.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +12,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RestController
 public class EmployeeService {
 
-	@GetMapping(path = "/employee",produces = "application/json")
+	@GetMapping(path = "/employee", produces = "application/json")
 	public List<Employee> findAllEmployee() {
 		ArrayList<Employee> arrayList = new ArrayList<Employee>();
 		arrayList.add(new Employee(1, "abc"));
 		arrayList.add(new Employee(2, "def"));
 		arrayList.add(new Employee(3, "ghi"));
 		return arrayList;
-		
-		
 	}
-	
+
 }
